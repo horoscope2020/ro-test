@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+		body {
+			background: #1a1616;
+			margin: 0 auto;
+		}
+        .main {
+            display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			right: 0;
+			color: #fff;
+        }
+		a#countdown {
+			color: #fff;
+			text-decoration: none;
+			font-size: 56px;
+			min-height: 64px;
+		}
+		.a2 a {
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.a2 {
+			background: #ff1a1a;
+			padding: 20px 30px;
+			margin: 5px 0;
+		}
+		.a2:hover {
+			background-color: #ba1a1a;
+			cursor: pointer;
+		}
+
+    </style>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '579506699252061');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=579506699252061&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+</head>
+<body>
+    <div class="main">
+        <h2 class="title" align="center">Вы будете переправлены на сайт через:</h2>
+        <a id="countdown" href="#"></a>
+        <h4 class="title" align="center">или нажмите на кнопку</h4>
+        <div class="a2">
+            <a href="https://mea1a3f.winningnow.net/?lp=rp3&trackCode=aff_f05ead_37_Facebook_me_t1">Перейти на сайт</a>
+        </div>
+    </div>
+
+    <script>
+        var timeleft = 5;
+        var downloadTimer = setInterval(function(){
+            document.getElementById("countdown").innerHTML = timeleft;
+            timeleft -= 1;
+            if(timeleft <= -1){
+                clearInterval(downloadTimer);
+                document.getElementById("countdown").innerHTML = "0"
+                window.location.href = "#";
+            }
+        }, 1000);
+
+
+    </script>
+    <script type="text/javascript">
+	setTimeout('document.location.href="https://mea1a3f.winningnow.net/?lp=rp3&trackCode=aff_f05ead_37_Facebook_me_t1";', 5000);
+	</script>
+</body>
+</html>
